@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: cursive;
+    background: #e5e5e5;
+  }
+  
+  h1,
+  h2 {
+    text-align: center;
+    color: #f8f8f8;
+  }
+  
+  h1 {
+    margin: 2rem 0;
+    font-size: 2rem;
+    letter-spacing: 12px;
+    font-weight: 900;
+    color: #46444a;
+  }
+  
+  .input-task {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .input-task input {
+    padding: 0.21rem 2rem;
+    margin: 5px 0;
+    width: 600px;
+  }
+  
+  .input-task input[type="text"] {
+    border-radius: 12px;
+    outline: none;
+    padding: 12px 14px;
+    border: 1px solid gray;
+  }
+  
+  #todoBtn {
+    background: #46444a;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 65vh;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .common-style {
+    flex: 1;
+    padding: 10px 0;
+    margin: 0 12px;
+    background: #46444a;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 4px 11.5px 2px #dddddd;
+    -moz-box-shadow: 0 4px 11.5px 2px #dddddd;
+    box-shadow: 0 4px 11.5px 2px #dddddd;
+  }
+  
+  .list {
+    margin: 1rem 12px;
+  }
+  
+  .list ul {
+    list-style-type: none;
+  }
+  
+  .list ul li {
+    border: 1px solid royalblue;
+    margin: 9px 0;
+    padding: 9px 20px;
+  }
+  
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    background-color: #c7c5c5;
+    margin: 12px 0;
+    padding: 3px 6px;
+    border-radius: 6px;
+    flex-wrap: wrap;
+  }
+  
+  .common-btn {
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    padding: 3px 6px;
+    cursor: pointer;
+    margin: 0 3px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  [data-type="delete"]:hover {
+    background-color: crimson;
+    color: #f8f8f8;
+  }
+  
+  [data-type="done"]:hover {
+    background-color: forestgreen;
+    color: #f8f8f8;
+  }
+  
+  [data-type="pending"]:hover {
+    background-color: darkorange;
+    color: #f8f8f8;
+  }
+  
+  [data-type="edit"]:hover {
+    background-color: blueviolet;
+    color: #f8f8f8;
+  }
+  
+  .done-wrapper {
+    background-color: forestgreen;
+    color: #f8f8f8;
+  }
+  .pending-wrapper {
+    background-color: darkorange;
+    color: #f8f8f8;
+  }
+  
+  @media all and (max-width: 900px) {
+    main {
+      flex-direction: column;
+    }
+    .common-style {
+      margin: 12px auto;
+      width: 90%;
+    }
+    .common-btn {
+      width: 75px;
+    }
+    .input-task input {
+      width: 90%;
+    }
+  }
